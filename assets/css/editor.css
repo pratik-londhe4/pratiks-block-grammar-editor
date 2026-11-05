@@ -1,0 +1,188 @@
+/**
+ * Block Grammar Editor - Editor Styles
+ *
+ * @package PratikLondhe\PratiksBlockGrammarEditor
+ */
+
+.pbge-modal .components-modal__content {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	max-height: 85vh;
+}
+
+.pbge-modal .components-modal__header {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 16px 24px;
+	margin: 0;
+}
+
+.pbge-modal .components-modal__header-heading {
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: #1e1e1e;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.pbge-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 0;
+	padding: 16px 24px 24px;
+	gap: 12px;
+	background: #fbfbfb;
+}
+
+.pbge-meta-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+}
+
+.pbge-meta-chips {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.pbge-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 11px;
+	font-weight: 500;
+	padding: 3px 8px;
+	background: #f1f5f9;
+	color: #334155;
+	border-radius: 4px;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.pbge-chip-label {
+	color: #64748b;
+	font-weight: 400;
+}
+
+.pbge-status-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 4px 10px;
+	border-radius: 9999px;
+	transition: all 0.2s ease;
+}
+
+.pbge-status-pill.pbge-status-valid {
+	background: #ecfdf5;
+	color: #065f46;
+	border: 1px solid #a7f3d0;
+}
+
+.pbge-status-pill.pbge-status-invalid {
+	background: #fef2f2;
+	color: #991b1b;
+	border: 1px solid #fecaca;
+}
+
+.pbge-status-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.pbge-status-valid .pbge-status-dot {
+	background: #10b981;
+}
+
+.pbge-status-invalid .pbge-status-dot {
+	background: #ef4444;
+}
+
+.pbge-editor-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 280px;
+	background: #fff;
+	border: 1px solid #cbd5e1;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.pbge-editor-wrapper:focus-within {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.pbge-textarea {
+	width: 100%;
+	height: 100%;
+	min-height: 300px;
+	padding: 14px;
+	border: none;
+	resize: vertical;
+	outline: none;
+	background: #fff;
+	color: #0f172a;
+	font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, monospace;
+	font-size: 13px;
+	line-height: 1.6;
+	tab-size: 2;
+	white-space: pre-wrap;
+	word-break: break-all;
+	box-sizing: border-box;
+}
+
+.pbge-error-alert {
+	padding: 10px 14px;
+	background: #fff1f2;
+	border-left: 4px solid #e11d48;
+	color: #9f1239;
+	font-size: 12px;
+	border-radius: 4px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.pbge-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 12px;
+	padding-top: 8px;
+	border-top: 1px solid #e2e8f0;
+}
+
+.pbge-footer-left,
+.pbge-footer-right {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.pbge-hint {
+	font-size: 11px;
+	color: #64748b;
+}
+
+/* Custom icon in block settings menu */
+.pbge-menu-icon {
+	fill: currentColor;
+}
